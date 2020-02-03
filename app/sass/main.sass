@@ -120,6 +120,10 @@ body
 .btn--brown
     background: #937452
     box-shadow: 0 3px 0 0 #937452;
+.btn--transparet
+    border: 1px solid #fff;
+    background: none;
+    box-shadow: none;
 //Swag
 .swag
     background: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.5) ),url('/img/_src/fpvan.jpg') no-repeat center center
@@ -148,10 +152,14 @@ body
     font-weight: 400
     
 .reviews,
-.features
+.features,
+.portfolio,
+.team,
+.contact
     padding: 90px 0 100px
     text-align: center
 .arrow__title
+    font-size: 15px
     color: #353535
     text-transform: uppercase
     letter-spacing: 1px
@@ -167,7 +175,10 @@ body
     margin: 15px 0
     text-align: center
 .reviews__title,
-.features__title
+.features__title,
+.portfolio__title,
+.team__title,
+.contact__title
     color: #353535
     text-transform: uppercase
     font-weight: 700
@@ -230,10 +241,41 @@ body
     z-index: 2
     text-align: center
     padding: 40px 0
-    
-    
-    
-    
-    
+.portfolio__slider,
+.team__slider
+    display: flex
+.team__slider
+    padding-top: 30px;
+    justify-content: space-around;
+
+.info
+    background-color: #242830
+    padding: 70px 0
+.info__wrapper
+    text-align: center
+    p
+        padding: 10px 0
+.contact
+    background: #f3f5f8
+.contact__list
+    display: flex
+    margin: 70px 0
+.contact__item
+    padding: 20px 10px
+    background-color: #fff
+    margin: 0 15px
+    box-shadow: 0 3px 0 0 #937452
+    img
+        width: 20px
+        height: 20px
+.footer
+    background-color: #242830
+    padding: 40px 0 30px
+.footer_nav
+    display: flex
+    a
+        margin-right: 15px
+        color: #fff
+        text-decoration: none
     
     
