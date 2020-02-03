@@ -17,18 +17,19 @@ input, textarea
 		border-color: green
 
 body
-	font-size: 16px
+	font-size: 14px
 	min-width: 320px
 	position: relative
-	line-height: 1.65
-	font-family: 'Roboto', sans-serif
+    background-color: #fff
+	font-family: 'Varela Round', sans-serif
 	overflow-x: hidden
 	color: $text
+        
 
 // Custom Sass / Remove before use
 
 .container
-	max-width: 700px
+	max-width: 1170px
 	padding:
 		right: $gutter/2
 		left: $gutter/2
@@ -55,8 +56,184 @@ body
 		> div
 			padding: $gutter/2 0
 	
-.example-img
-	width: 100%
-
-.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+//Header
+.header
+    width: 100%
+    position: absolute
+    top: 0
+    left: 0
+    z-index: 1000
+.header__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 65px
+.nav
+    display: flex
+    font-weight: 700
+    text-transform: uppercase
+.nav__link
+    margin-left: 30px
+    color: #000
+    text-decoration: none
+    &:hover
+        color: #937452
+        text-decoration: none
+.header__phone
+    font-weight: 700
+    
+.intro
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 550px
+    padding-top: 100px
+    background: #fff
+    background-size: cover
+    
+// background: #fff url('/img/_src/intro1-bg.jpg') center no-repeat
+    
+.intro__inner
+    width: 100%
+    max-width: 970px
+    margin: 0 auto
+    text-align: center
+.intro__title
+    font-size: 40px
+    letter-spacing: 12px
+    margin: 10px
+    color: #353535
+    font-weight: 400
+    > span
+        color: #e5d5bc
+.intro__subtitle
+    color: #8c9398
+    margin-bottom: 50px
+.btn
+    color: #fff;
+    font-size: 16px
+    text-transform: uppercase
+    letter-spacing: 1px
+    font-weight: 700
+    padding: 20px 40px
+    border-radius: 5px
+.btn--brown
+    background: #937452
+    box-shadow: 0 3px 0 0 #937452;
+//Swag
+.swag
+    background: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.5) ),url('/img/_src/fpvan.jpg') no-repeat center center
+    background-size: cover
+    background-attachment: fixed
+    padding: 50px 0
+    text-align: center
+.swag__inner
+    color: #fff
+    max-width: 740px
+    margin: 0 auto
+.swag__title
+    font-size: 35px
+    font-weight: 400
+    text-transform: uppercase
+    letter-spacing: 5px
+    margin: 10px 0
+.arrow
+    background: url('/img/_src/h1-bg.png') no-repeat center bottom
+    padding-bottom: 30px
+.swag__subtitle
+    line-height: 28px
+    padding: 15px 0
+.swag__phone
+    font-size: 25px
+    font-weight: 400
+    
+.reviews,
+.features
+    padding: 90px 0 100px
+    text-align: center
+.arrow__title
+    color: #353535
+    text-transform: uppercase
+    letter-spacing: 1px
+.reviews__list,
+.features__list
+    display: flex
+    flex-wrap: wrap
+    margin: 15px 0    
+.reviews_item,
+.features_item
+    width: 33.3333%
+    padding: 0 20px
+    margin: 15px 0
+    text-align: center
+.reviews__title,
+.features__title
+    color: #353535
+    text-transform: uppercase
+    font-weight: 700
+    margin: 10px 
+    &:after
+        content: " "
+        border: solid 2px #937452
+        display: block
+        width: 35px
+        margin: 25px auto
+.reviews__text
+.features__text,
+.services__text
+    color: #8c9398
+    word-spacing: 1px
+    line-height: 25px
+    font-size: 14px
+.features__list
+    margin: 70px 0
+.icon
+    height: 150px
+    width: 150px
+    max-width: 100%
+    background: #937452
+    border-radius: 50%
+    display: block
+    color: #fff
+    font-size: 55px
+    text-align: center
+    vertical-align: middle
+    position: relative
+    margin: 0 auto 50px
+    img
+         width: 65px
+         height: 55px
+         position: absolute
+         margin: 0 auto
+         left: 0
+         right: 0
+         top: 45px
+         bottom: 0
+.services__wrapper
+    height: 650px
+.col__left
+    width: 50%
+    background: #f3f5f8
+    float: left
+    height: 100%
+    box-shadow: inset -15px -11px 40px -6px rgba(0,0,0,.1)
+    z-index: 1
+.left__bg
+    background: url('/img/_src/iphone-bg.png') no-repeat center center
+    background-position: 200px 10px
+    height: 100%
+.col__right
+    width: 50%
+    background: #fff
+    float: right
+    height: 100%
+    z-index: 2
+    text-align: center
+    padding: 40px 0
+    
+    
+    
+    
+    
+    
+    
