@@ -241,15 +241,15 @@ body
     z-index: 2
     text-align: center
     padding: 40px 0
-.portfolio__slider,
+.portfolio__list,
 .team__slider
     display: flex
     flex-wrap: wrap
 .team__slider
     padding-top: 30px;
     justify-content: space-around;
-.portfolio__slider
-    .slick-item
+.portfolio__list
+    .portfolio__item
         max-width: 33.3333%
         padding: 0 10px
         img
@@ -313,6 +313,38 @@ body
     &:after
         width: 25px
         bottom: -8px
+//Slider
+.slick-dots 
+    display: flex
+    justify-content: center
+    margin: 0 auto
+    padding: 10px
+    list-style: none
+    width: 50%
+    right: 0
+    bottom: 0
+    z-index: 2
+
+.slick-dots li 
+    margin: 0 5px
+
+.slick-dots button 
+    width: 15px
+    height: 15px
+    padding: 0
+    background: #6f6767
+    border-radius: 50%
+    border: 0
+    opacity: .5
+    cursor: pointer
+    font-size: 0
+    color: transparent
+
+.slick-dots .slick-active button 
+    opacity: 1
+
+.slick-dots button:focus 
+    outline: 0
 
         
 @media (max-width: 991px)
@@ -347,7 +379,7 @@ body
         padding: 0 40px
     .reviews_item,
     .features_item,
-    .slick-item,
+    .portfolio__item,
     .contact__item
         width: 100%
         padding: 0 60px
@@ -385,7 +417,7 @@ body
         
 @media (max-width: 569px)
      .intro__subtitle
-        margin-bottom: 20px
+            margin-bottom: 20px
      .btn
         padding: 10px 20px
      .swag__subtitle,

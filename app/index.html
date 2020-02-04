@@ -14,8 +14,9 @@
 	<meta property="og:image" content="img/@1x/preview.jpg">
 	
 	<link rel="stylesheet" href="css/styles.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
+	
 </head>
 
 <body>
@@ -135,11 +136,20 @@
 	           </div>
 	           <div class="col__right">
 	               <div class="services__list">
-	                 <div class="services_item">
+                     <div class="service__slider" id="service__slider">
+                         <div class="services_item">
                         <div class="arrow__title">Your comfort, safety, and satisfaction are guaranteed.</div>
 	                    <div class="arrow"></div>
                         <div class="services__text">Thank you for a great transportation. Great driver. Absolutely wonderful experience. The office people were very helpful and knowledgable, very easy to work with! Great rates for the amazing service they provide!</div>
                     </div>  
+                    
+                       <div class="services_item">
+                        <div class="arrow__title">Your comfort, </div>
+	                    <div class="arrow"></div>
+                        <div class="services__text">Thank you for a great transportation. Great driver. Absolutely wonderful experience. The office people were very helpfassy to work with! Great rates for the amazing service they provide!</div>
+                    </div>  
+                     </div>
+	                
 	               </div>
 	               
 	           </div>
@@ -160,8 +170,12 @@
 	
 	<div class="portfolio">
 	    <div class="container">
-	        <div class="portfolio__slider">
-	            <div class="slick-item">
+            
+	        <div class="portfolio__list">
+                <div class="porfolio_slider" id="porfolio_slider">
+                    
+                </div>
+	            <div class="portfolio__item">
                     <a href="#">
                         <img src="/img/_src/Class E.jpeg" alt="">
                     </a>
@@ -169,7 +183,7 @@
 	                    Tesla
 	                </div>
 	            </div>
-	             <div class="slick-item">
+	             <div class="portfolio__item">
                     <a href="#">
                         <img src="/img/_src/Class E.jpeg" alt="">
                     </a>
@@ -277,7 +291,9 @@
 	    </div>
 	</footer>
 	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 
 </body>
