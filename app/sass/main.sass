@@ -87,7 +87,7 @@ body
     flex-direction: column
     justify-content: center
     height: 550px
-    padding-top: 100px
+    padding-top: 125px
     background: #fff
     background-size: cover
     
@@ -244,10 +244,16 @@ body
 .portfolio__slider,
 .team__slider
     display: flex
+    flex-wrap: wrap
 .team__slider
     padding-top: 30px;
     justify-content: space-around;
-
+.portfolio__slider
+    .slick-item
+        max-width: 33.3333%
+        padding: 0 10px
+        img
+            width: 100%
 .info
     background-color: #242830
     padding: 70px 0
@@ -259,11 +265,13 @@ body
     background: #f3f5f8
 .contact__list
     display: flex
+    flex-wrap: wrap
     margin: 70px 0
 .contact__item
+    width: 30%
     padding: 20px 10px
     background-color: #fff
-    margin: 0 15px
+    margin: 25px 15px
     box-shadow: 0 3px 0 0 #937452
     img
         width: 20px
@@ -277,5 +285,111 @@ body
         margin-right: 15px
         color: #fff
         text-decoration: none
-    
-    
+.burger
+    display: none
+    padding: 10px 2px
+    background: none
+    border: 0
+    cursor: pointer
+.burger__item
+    display: block
+    width: 30px
+    height: 3px
+    background-color: #000
+    font-size: 0
+    color: transparent
+    position: relative
+    &:after,
+    &:before
+        content: ""
+        height: 100%
+        background-color: #000
+        position: absolute
+        right: 0
+        z-index: 1
+    &:before
+        width: 25px
+        top: -8px
+    &:after
+        width: 25px
+        bottom: -8px
+
+        
+@media (max-width: 991px)
+    .nav
+        display: none
+        position: absolute;
+        right: 0
+        top: 100%
+        flex-direction: column
+        width: 100%
+        text-align: center
+        background-color: #937452
+    .nav.show
+            display: flex
+    .nav__link
+        color: #fff
+        padding: 7px 15px
+    .header__phone
+        display: none
+    .burger
+        display: block
+    .intro__title 
+        font-size: 35px
+    .header__inner
+        justify-content: flex-end
+    .swag__title
+        font-size: 30px
+    .swag__subtitle,
+    .reviews__text,
+    .features__text,
+    .services__text
+        padding: 0 40px
+    .reviews_item,
+    .features_item,
+    .slick-item,
+    .contact__item
+        width: 100%
+        padding: 0 60px
+    .services__wrapper
+        height: 400px
+    .col__left
+        display: none
+    .col__right
+        width: 100%
+        padding: 80px 40px 0
+        background: #f3f5f8
+    .contact
+        padding-bottom: 0
+    .contact__list
+        margin: 27px 50px 0
+    .reviews,
+    .features,
+    .portfolio,
+    .team,
+    .contact
+        padding: 50px 0 
+@media (max-width: 767px)  
+    .intro
+        height: 340px
+    .intro__title 
+        font-size: 28px
+    .header__inner
+        justify-content: flex-end
+    .swag__title
+        font-size: 27px
+    .contact__item
+        padding: 0 20px
+    .contact__list 
+        margin: 27px 20px 0
+        
+@media (max-width: 569px)
+     .intro__subtitle
+        margin-bottom: 20px
+     .btn
+        padding: 10px 20px
+     .swag__subtitle,
+     .reviews__text,
+     .features__text,
+     .services__text
+        padding: 0 20px
