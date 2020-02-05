@@ -38,8 +38,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 loop: true,
                 dots: true,
                 arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
                 slidesToShow: 2
               }
             },
@@ -49,8 +47,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 loop: true,
                 dots: true,
                 arrows: false,
-                centerMode: true,
-                centerPadding: '40px',
                 slidesToShow: 1
               }
             }
