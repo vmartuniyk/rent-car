@@ -248,12 +248,14 @@ body
 .team__slider
     padding-top: 30px;
     justify-content: space-around;
-.portfolio__list
-    .portfolio__item
-        max-width: 33.3333%
-        padding: 0 10px
-        img
-            width: 100%
+.porfolio_slider
+    width: 100%
+//.portfolio__list
+//    .portfolio__item
+//        max-width: 33.3333%
+//        padding: 0 10px
+//        img
+//            width: 100%
 .info
     background-color: #242830
     padding: 70px 0
@@ -348,7 +350,8 @@ body
 
         
 @media (max-width: 991px)
-    .nav
+    .nav,
+    .header__phone
         display: none
         position: absolute;
         right: 0
@@ -357,13 +360,12 @@ body
         width: 100%
         text-align: center
         background-color: #937452
-    .nav.show
+    .nav.show,
+    .header__phone.show
             display: flex
     .nav__link
         color: #fff
         padding: 7px 15px
-    .header__phone
-        display: none
     .burger
         display: block
     .intro__title 
