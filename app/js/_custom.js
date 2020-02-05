@@ -22,13 +22,65 @@ document.addEventListener("DOMContentLoaded", function() {
       arrows: false
     });
     
-     let portfolioSlider = $("#porfolio_slider");
+    let portfolioSlider = $("#porfolio_slider");
     
     portfolioSlider.slick({
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 1,
+      loop: true,
       dots: true,
-      arrows: false
+      arrows: false,
+          responsive: [
+            {
+              breakpoint: 990,
+              settings: {
+                loop: true,
+                dots: true,
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 2
+              }
+            },
+               {
+              breakpoint: 768,
+              settings: {
+                loop: true,
+                dots: true,
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+   
+          ]
+    });
+    
+    let teamSlider = $("#team__slider");
+    
+    teamSlider.slick({
+      infinite: true,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      loop: true,
+      dots: true,
+      arrows: false,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                loop: true,
+                dots: true,
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+              }
+            }
+   
+          ]
+        
     });
 });
