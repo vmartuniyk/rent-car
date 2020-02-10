@@ -126,7 +126,7 @@ body
     box-shadow: none;
 //Swag
 .swag
-    background: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.5) ),url('/img/_src/fpvan.jpg') no-repeat center center
+    background: linear-gradient( rgba(0,0,0,0.4),rgba(0,0,0,0.5) ),url('../img/_src/fpvan.jpg') no-repeat center center
     background-size: cover
     background-attachment: fixed
     padding: 50px 0
@@ -142,7 +142,7 @@ body
     letter-spacing: 5px
     margin: 10px 0
 .arrow
-    background: url('/img/_src/h1-bg.png') no-repeat center bottom
+    background: url('../img/_src/h1-bg.png') no-repeat center bottom
     padding-bottom: 30px
 .swag__subtitle
     line-height: 28px
@@ -230,7 +230,7 @@ body
     box-shadow: inset -15px -11px 40px -6px rgba(0,0,0,.1)
     z-index: 1
 .left__bg
-    background: url('/img/_src/iphone-bg.png') no-repeat center center
+    background: url('../img/_src/iphone-bg.png') no-repeat center center
     background-position: 200px 10px
     height: 100%
 .col__right
@@ -258,6 +258,35 @@ body
 //        padding: 0 10px
 //        img
 //            width: 100%
+
+.social-buttons 
+    list-style: none
+    margin: 0
+    padding: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    li
+        margin-right: 5px
+.social-btn
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    background: #242830
+    display: inline-block
+    color: #fff
+    font-size: 17px
+    line-height: 40px
+    text-align: center
+    > img
+        width: 17px
+        height: 17px
+        right: 0
+        left: 0
+        margin: 0 auto
+        top: 10px
+        bottom: 0
+        display: inline-block
 .info
     background-color: #242830
     padding: 70px 0
@@ -280,6 +309,8 @@ body
     img
         width: 20px
         height: 20px
+.modular-row 
+    display: none
 .footer
     background-color: #242830
     padding: 40px 0 30px
@@ -317,6 +348,106 @@ body
     &:after
         width: 25px
         bottom: -8px
+//Default Page
+.page__content
+    padding: 100px
+//car detail
+.car_items,
+.car_features 
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+.pills,
+.tab-pane 
+    padding: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+
+.car_item 
+    display: flex
+    align-self: stretch
+    padding: 15px
+
+.car_text 
+    text-align: center
+.text
+    text-align: center
+.icon_inner 
+    width: 55px
+    height: 55px
+    fill: white
+    position: absolute
+    margin: 0 auto
+    top: 40px
+    left: 0
+    right: 0
+.car
+    padding: 100px 50px
+    text-align: center
+.car__list
+    .slick-slide
+        img
+            width: 100%
+.car-header.hero 
+    padding: 65px 0 0
+.slides
+    list-style: none
+.car-single
+    .slick-slide
+        img
+            width: 100%
+
+//Modal form
+.modular-row 
+    display: none
+    width: 99%
+    height: 100%
+    position: fixed
+    background-color: rgba(43,42,44,0.5)
+    padding: 15px
+    top: 0
+    left: 0
+    z-index: 1000
+    overflow: auto
+
+//.modular-row.show 
+//    display: block
+
+.contact_dialog 
+    position: relative
+    top: 30%
+    width: 60%
+    margin: auto
+    background-color: #fff
+   
+.modal__close 
+    width: 34px
+    height: 39px
+    position: absolute
+    padding: 0
+    background: none
+    border: 0
+    cursor: pointer
+    top: 10px
+    right: 1rem
+    z-index: 1
+
+.notices 
+    text-align: center
+form 
+    margin: 0 auto
+    width: 80%
+    padding: 20px
+    background-color: #fff
+    opacity: 1
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    
+    
+    
 //Slider
 .slick-dots 
     display: flex
@@ -368,6 +499,7 @@ body
     .nav__link
         color: #fff
         padding: 7px 15px
+        margin: 0 auto
     .burger
         display: block
     .intro__title 
@@ -392,7 +524,7 @@ body
         img
             width: 100%
     .services__wrapper
-        height: 400px
+        height: 650px
     .col__left
         display: none
     .col__right

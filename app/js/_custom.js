@@ -22,6 +22,17 @@ document.addEventListener("DOMContentLoaded", function() {
       arrows: false
     });
     
+    let carSlider = $("#carSlider");
+    
+    carSlider.slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: true,
+      arrows: false
+    });
+    
+    
     let portfolioSlider = $("#porfolio_slider");
     
     portfolioSlider.slick({
